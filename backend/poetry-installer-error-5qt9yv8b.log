@@ -1,0 +1,192 @@
+Collecting poetry==1.8.3
+  Downloading poetry-1.8.3-py3-none-any.whl.metadata (6.8 kB)
+Collecting build<2.0.0,>=1.0.3 (from poetry==1.8.3)
+  Downloading build-1.2.1-py3-none-any.whl.metadata (4.3 kB)
+Collecting cachecontrol<0.15.0,>=0.14.0 (from cachecontrol[filecache]<0.15.0,>=0.14.0->poetry==1.8.3)
+  Downloading cachecontrol-0.14.0-py3-none-any.whl.metadata (3.1 kB)
+Collecting cleo<3.0.0,>=2.1.0 (from poetry==1.8.3)
+  Downloading cleo-2.1.0-py3-none-any.whl.metadata (12 kB)
+Collecting crashtest<0.5.0,>=0.4.1 (from poetry==1.8.3)
+  Downloading crashtest-0.4.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting dulwich<0.22.0,>=0.21.2 (from poetry==1.8.3)
+  Downloading dulwich-0.21.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.3 kB)
+Collecting fastjsonschema<3.0.0,>=2.18.0 (from poetry==1.8.3)
+  Downloading fastjsonschema-2.20.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting installer<0.8.0,>=0.7.0 (from poetry==1.8.3)
+  Downloading installer-0.7.0-py3-none-any.whl.metadata (936 bytes)
+Collecting keyring<25.0.0,>=24.0.0 (from poetry==1.8.3)
+  Downloading keyring-24.3.1-py3-none-any.whl.metadata (20 kB)
+Collecting packaging>=23.1 (from poetry==1.8.3)
+  Downloading packaging-24.1-py3-none-any.whl.metadata (3.2 kB)
+Collecting pexpect<5.0.0,>=4.7.0 (from poetry==1.8.3)
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting pkginfo<2.0,>=1.10 (from poetry==1.8.3)
+  Downloading pkginfo-1.11.1-py3-none-any.whl.metadata (11 kB)
+Collecting platformdirs<5,>=3.0.0 (from poetry==1.8.3)
+  Downloading platformdirs-4.2.2-py3-none-any.whl.metadata (11 kB)
+Collecting poetry-core==1.9.0 (from poetry==1.8.3)
+  Downloading poetry_core-1.9.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting poetry-plugin-export<2.0.0,>=1.6.0 (from poetry==1.8.3)
+  Downloading poetry_plugin_export-1.8.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting pyproject-hooks<2.0.0,>=1.0.0 (from poetry==1.8.3)
+  Downloading pyproject_hooks-1.1.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting requests<3.0,>=2.26 (from poetry==1.8.3)
+  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting requests-toolbelt<2.0.0,>=1.0.0 (from poetry==1.8.3)
+  Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Collecting shellingham<2.0,>=1.5 (from poetry==1.8.3)
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting tomli<3.0.0,>=2.0.1 (from poetry==1.8.3)
+  Downloading tomli-2.0.1-py3-none-any.whl.metadata (8.9 kB)
+Collecting tomlkit<1.0.0,>=0.11.4 (from poetry==1.8.3)
+  Downloading tomlkit-0.12.5-py3-none-any.whl.metadata (2.7 kB)
+Collecting trove-classifiers>=2022.5.19 (from poetry==1.8.3)
+  Downloading trove_classifiers-2024.7.2-py3-none-any.whl.metadata (2.2 kB)
+Collecting virtualenv<21.0.0,>=20.23.0 (from poetry==1.8.3)
+  Downloading virtualenv-20.26.3-py3-none-any.whl.metadata (4.5 kB)
+Collecting msgpack<2.0.0,>=0.5.2 (from cachecontrol<0.15.0,>=0.14.0->cachecontrol[filecache]<0.15.0,>=0.14.0->poetry==1.8.3)
+  Downloading msgpack-1.0.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.1 kB)
+Collecting filelock>=3.8.0 (from cachecontrol[filecache]<0.15.0,>=0.14.0->poetry==1.8.3)
+  Downloading filelock-3.15.4-py3-none-any.whl.metadata (2.9 kB)
+Collecting rapidfuzz<4.0.0,>=3.0.0 (from cleo<3.0.0,>=2.1.0->poetry==1.8.3)
+  Downloading rapidfuzz-3.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting urllib3>=1.25 (from dulwich<0.22.0,>=0.21.2->poetry==1.8.3)
+  Downloading urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+Collecting jaraco.classes (from keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting importlib-metadata>=4.11.4 (from keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading importlib_metadata-8.0.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting SecretStorage>=3.2 (from keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading SecretStorage-3.3.3-py3-none-any.whl.metadata (4.0 kB)
+Collecting jeepney>=0.4.2 (from keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading jeepney-0.8.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting ptyprocess>=0.5 (from pexpect<5.0.0,>=4.7.0->poetry==1.8.3)
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting charset-normalizer<4,>=2 (from requests<3.0,>=2.26->poetry==1.8.3)
+  Downloading charset_normalizer-3.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (33 kB)
+Collecting idna<4,>=2.5 (from requests<3.0,>=2.26->poetry==1.8.3)
+  Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+Collecting certifi>=2017.4.17 (from requests<3.0,>=2.26->poetry==1.8.3)
+  Downloading certifi-2024.7.4-py3-none-any.whl.metadata (2.2 kB)
+Collecting distlib<1,>=0.3.7 (from virtualenv<21.0.0,>=20.23.0->poetry==1.8.3)
+  Downloading distlib-0.3.8-py2.py3-none-any.whl.metadata (5.1 kB)
+Collecting zipp>=0.5 (from importlib-metadata>=4.11.4->keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading zipp-3.19.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting cryptography>=2.0 (from SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading cryptography-42.0.8-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting more-itertools (from jaraco.classes->keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading more_itertools-10.3.0-py3-none-any.whl.metadata (36 kB)
+Collecting cffi>=1.12 (from cryptography>=2.0->SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading cffi-1.16.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.12->cryptography>=2.0->SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry==1.8.3)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading poetry-1.8.3-py3-none-any.whl (249 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 249.9/249.9 kB 42.2 kB/s eta 0:00:00
+Downloading poetry_core-1.9.0-py3-none-any.whl (309 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.5/309.5 kB 65.5 kB/s eta 0:00:00
+Downloading build-1.2.1-py3-none-any.whl (21 kB)
+Downloading cachecontrol-0.14.0-py3-none-any.whl (22 kB)
+Downloading cleo-2.1.0-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.7/78.7 kB 86.2 kB/s eta 0:00:00
+Downloading crashtest-0.4.1-py3-none-any.whl (7.6 kB)
+Downloading dulwich-0.21.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (514 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 514.7/514.7 kB 173.2 kB/s eta 0:00:00
+Downloading fastjsonschema-2.20.0-py3-none-any.whl (23 kB)
+Downloading installer-0.7.0-py3-none-any.whl (453 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 453.8/453.8 kB 319.9 kB/s eta 0:00:00
+Downloading keyring-24.3.1-py3-none-any.whl (38 kB)
+Downloading packaging-24.1-py3-none-any.whl (53 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 kB 416.3 kB/s eta 0:00:00
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 266.8 kB/s eta 0:00:00
+Downloading pkginfo-1.11.1-py3-none-any.whl (31 kB)
+Downloading platformdirs-4.2.2-py3-none-any.whl (18 kB)
+Downloading poetry_plugin_export-1.8.0-py3-none-any.whl (10 kB)
+Downloading pyproject_hooks-1.1.0-py3-none-any.whl (9.2 kB)
+Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 98.5 kB/s eta 0:00:00
+Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 kB 133.2 kB/s eta 0:00:00
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+Downloading tomlkit-0.12.5-py3-none-any.whl (37 kB)
+Downloading trove_classifiers-2024.7.2-py3-none-any.whl (13 kB)
+Downloading virtualenv-20.26.3-py3-none-any.whl (5.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 33.2 kB/s eta 0:00:00
+Downloading certifi-2024.7.4-py3-none-any.whl (162 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.0/163.0 kB 149.3 kB/s eta 0:00:00
+Downloading charset_normalizer-3.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (142 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 142.1/142.1 kB 209.7 kB/s eta 0:00:00
+Downloading distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.9/468.9 kB 120.7 kB/s eta 0:00:00
+Downloading filelock-3.15.4-py3-none-any.whl (16 kB)
+Downloading idna-3.7-py3-none-any.whl (66 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.8/66.8 kB 26.1 kB/s eta 0:00:00
+Downloading importlib_metadata-8.0.0-py3-none-any.whl (24 kB)
+Downloading jeepney-0.8.0-py3-none-any.whl (48 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 15.1 kB/s eta 0:00:00
+Downloading msgpack-1.0.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (385 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.1/385.1 kB 27.0 kB/s eta 0:00:00
+Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Downloading rapidfuzz-3.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   3.2/3.4 MB 104.1 kB/s eta 0:00:02
+ERROR: Exception:
+Traceback (most recent call last):
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/response.py", line 438, in _error_catcher
+    yield
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/response.py", line 561, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/response.py", line 527, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol/filewrapper.py", line 98, in read
+    data: bytes = self.__fp.read(amt)
+  File "/usr/lib/python3.10/http/client.py", line 466, in read
+    s = self.fp.read(amt)
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.10/ssl.py", line 1303, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.10/ssl.py", line 1159, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/cli/base_command.py", line 179, in exc_logging_wrapper
+    status = run_func(*args)
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/cli/req_command.py", line 67, in wrapper
+    return func(self, options, args)
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/commands/install.py", line 377, in run
+    requirement_set = resolver.resolve(
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/resolution/resolvelib/resolver.py", line 179, in resolve
+    self.factory.preparer.prepare_linked_requirements_more(reqs)
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/operations/prepare.py", line 554, in prepare_linked_requirements_more
+    self._complete_partial_requirements(
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/operations/prepare.py", line 469, in _complete_partial_requirements
+    for link, (filepath, _) in batch_download:
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/network/download.py", line 184, in __call__
+    for chunk in chunks:
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/cli/progress_bars.py", line 55, in _rich_progress_bar
+    for chunk in iterable:
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_internal/network/utils.py", line 63, in response_chunks
+    for chunk in response.raw.stream(
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/response.py", line 622, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/response.py", line 560, in read
+    with self._error_catcher():
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/jotham/.local/share/pypoetry/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/response.py", line 443, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.")
+pip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out.
+
+Traceback:
+
+  File "<stdin>", line 923, in main
+  File "<stdin>", line 560, in run
+  File "<stdin>", line 582, in install
+  File "<stdin>", line 685, in install_poetry
+  File "<stdin>", line 375, in pip
+  File "<stdin>", line 372, in python
+  File "<stdin>", line 365, in run
