@@ -1,24 +1,25 @@
-FROM python:3.10.12-slim
+# Use an official Python runtime as a parent image
+FROM python:3.10
 
-# Set the working directory in the container
+RUN set -xe
+
+# Install Poetry
+RUN curl -sSL https://install.python-poetry.org | python3 - --git https://github.com/python-poetry/poetry.git@master
+
+ENV PATH="/root/.local/bin:$PATH"
+
+RUN poetry --version
+# RUN poetry new foobar
+
+# Set up the working directory
 WORKDIR /app
 
-# Copy the requirements file into the container
-COPY pyproject.toml poetry.lock ./
+# Copy and install dependencies
+COPY . /app
 
-# Install Poetry with retry logic
-RUN pip install --upgrade pip && \
-    pip config set global.timeout 100 && \
-    pip install poetry --retries 5 --timeout 100
-
-# Install dependencies
 RUN poetry install
 
-# Copy the rest of the application code
-COPY . .
-
-# Make port 8000 available to the world outside this container
 EXPOSE 8000
 
-# Run the application
-CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Start the application
+CMD ["bash", "-c", "poetry run bash ./prestart.sh && poetry run uvicorn app.main:app --reload --host 0.0.0.0"]
