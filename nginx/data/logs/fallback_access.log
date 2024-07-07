@@ -1,0 +1,4 @@
+[07/Jul/2024:08:53:30 +0000] 200 - GET http localhost "/" [Client 172.18.0.1] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" "-"
+[07/Jul/2024:08:54:10 +0000] 404 - GET http localhost "/api" [Client 172.18.0.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" "-"
+[07/Jul/2024:08:54:18 +0000] 404 - GET http localhost "/docs" [Client 172.18.0.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" "-"
+[07/Jul/2024:08:57:08 +0000] 404 - GET http localhost "/8090" [Client 172.18.0.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" "-"

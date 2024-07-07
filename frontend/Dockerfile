@@ -1,18 +1,29 @@
-# Stage 1: Build the React app
-FROM node:12.22.9-alpine AS build
+# Use an official Node.js runtime as a parent image
+FROM node:20.15.0-alpine
+
+# Set the working directory in the container
 WORKDIR /app
-COPY package.json ./
-COPY package-lock.json ./
 
-# Install Git
-RUN apk update && apk add git
+# Copy the package.json and package-lock.json files
+COPY package*.json ./
 
+# Install dependencies
 RUN npm install
-COPY . ./
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the Vite app
 RUN npm run build
 
-# Stage 2: Serve the app using nginx
-FROM nginx:alpine
-COPY --from=build /app/build /usr/share/nginx/html
+# Check if the build directory exists
+RUN ls -al /app/dist
+
+# Install serve globally
+RUN npm install -g serve
+
+# Make port 80 available to the world outside this container
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+
+# Serve the application
+CMD ["serve", "-s", "dist"]
