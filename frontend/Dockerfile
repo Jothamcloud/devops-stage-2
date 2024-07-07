@@ -8,11 +8,11 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+#RUN npm install
 
 # Copy the rest of the application code
 COPY . /app
-
+RUN npm install
 # Build the Vite app
 #RUN npm run build
 
@@ -27,4 +27,4 @@ EXPOSE 5173
 
 # Serve the application
 #CMD ["serve", "-s", "dist"]
-CMD ["npm run dev --host"]
+CMD ["npm run dev -- --host"]
