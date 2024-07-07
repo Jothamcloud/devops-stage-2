@@ -11,19 +11,20 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application code
-COPY . .
+COPY . /app
 
 # Build the Vite app
-RUN npm run build
+#RUN npm run build
 
 # Check if the build directory exists
-RUN ls -al /app/dist
+#RUN ls -al /app/dist
 
 # Install serve globally
-RUN npm install -g serve
+#RUN npm install -g serve
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
+# Make port 5173 available to the world outside this container
+EXPOSE 5173
 
 # Serve the application
-CMD ["serve", "-s", "dist"]
+#CMD ["serve", "-s", "dist"]
+CMD ["npm run dev --host"]
