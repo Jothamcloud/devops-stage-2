@@ -5,7 +5,7 @@ FROM node:20.15.0-alpine
 WORKDIR /app
 
 # Copy the package.json and package-lock.json files
-COPY package*.json ./
+#COPY package*.json ./
 
 # Install dependencies
 #RUN npm install
@@ -27,4 +27,4 @@ EXPOSE 5173
 
 # Serve the application
 #CMD ["serve", "-s", "dist"]
-CMD ["npm run dev -- --host"]
+CMD [ "npm", "run", "dev", "--", "--host" ]
