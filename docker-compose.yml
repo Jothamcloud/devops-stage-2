@@ -5,7 +5,7 @@ services:
     image: jc21/nginx-proxy-manager:latest
     restart: always
     ports:
-      - "80:80"
+      - "81:80"
       - "8090:81"
       - "443:443"
     environment:
@@ -45,7 +45,7 @@ services:
     depends_on:
       - backend-container
     ports:
-      - "5173:5173"
+      - "80:5173"
     #networks:
       #- app-network
 
